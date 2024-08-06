@@ -5,7 +5,7 @@
       "id": "library",
       "title": "Library",
       "environments": [ "dev", "edit" ],
-      "url": "https://main--regione-lombardia--sgotenks.hlx.page/tools/sidekick/library.html",
+      "url": "https://main--regione-lombardia-db--sgotenks.hlx.page/tools/sidekick/library.html",
       "includePaths": [ "**.docx**" ]
     },
     {
