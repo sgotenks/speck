@@ -27,8 +27,9 @@
 }
 
 .cards.variante1 .cards-card-body{
-    margin: -43px 16px 16px 16px;
+    margin: -43px 0 0 0;
 }
+
 .cards.variante1  .cards-card-body p strong{
     display: inline-block;
     font-size: 11px;
@@ -36,6 +37,7 @@
     padding: 3px 6px;
     background: #f70d28;
     text-transform: uppercase;
+    margin-left: 7px;
 }
 
 
