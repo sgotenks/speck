@@ -26,6 +26,9 @@
   object-fit: cover;
 }
 
+.cards.variante1 .cards-card-body{
+    margin: -43px 16px 16px 16px;
+}
 .cards.variante1  .cards-card-body p strong{
     display: inline-block;
     font-size: 11px;
