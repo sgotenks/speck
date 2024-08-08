@@ -31,7 +31,7 @@
 }
 
 .cards.variante1 .cards-card-body{
-    margin: -43px 0 0 0;
+    margin: -43px 0 0 0!important;
 }
 
 .cards.variante1  .cards-card-body p strong{
