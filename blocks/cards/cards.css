@@ -57,5 +57,5 @@
 }
 
 .sidebar div{
-  margin: initial;
+  margin: initial!important;
 }
