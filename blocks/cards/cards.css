@@ -49,3 +49,13 @@
 .cards.variante1 > ul > li {
     border: 0px
 }
+
+.cards.variante1.sidebar{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+.sidebar div{
+  margin: initial;
+}
