@@ -65,19 +65,11 @@
 }
 
 .cards.variante2 > ul > li {
-    border: 0px
+    border: 0px;
+    list-style-type: disclosure-closed;
+    color: red;
 }
 
-.cards.variante2 .cards-card-body:before{
-    color: #f70d28;
-    font-size: 14px;
-    position: absolute;
-    left: 1px;
-    top: 0;
-    content: "\f0da";
-    font-family: FontAwesome;
-    text-rendering: auto;
-    width: 100%;
-    pointer-events: none;
-    -webkit-font-smoothing: antialiased;
+.cards.variante2 .cards-card-body  {
+    color: black;
 }
