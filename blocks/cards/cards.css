@@ -50,7 +50,7 @@
     border: 0px
 }
 
-.cards.variante1.sidebar{
+.section.sidebar{
     max-width: 1200px;
     margin: auto;
     display: flex;
