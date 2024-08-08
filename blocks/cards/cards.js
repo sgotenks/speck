@@ -14,7 +14,8 @@ export default function decorate(block) {
     ul.append(li);
   });
   ul.querySelectorAll('picture > img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
-  block.textContent = ''; 
+  block.textContent = '';
+  title.append("Title");
   block.append(title);
   block.append(ul);
 }
