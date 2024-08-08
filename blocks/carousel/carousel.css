@@ -193,15 +193,7 @@
 .carousel.variante1 a.button {
     border: 0px solid transparent; 
     padding: 0;
-    background-color: none;
-}
-
-.carousel.variante1 a.button:before {
-	content: "\f105";
-	font-family: "Font Awesome 5 Free";
-    	font-weight: 900;
-	font-size: 13px;
-	color: white;
+    background-color: transparent;
 }
 
 
