@@ -55,7 +55,7 @@
 }
 
 .section.sidebar{
-    max-width: 260px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
 }
@@ -72,4 +72,8 @@
 
 .cards.variante2 .cards-card-body  {
     color: black;
+}
+
+.cards.variante2{
+    max-width: 260px;
 }
