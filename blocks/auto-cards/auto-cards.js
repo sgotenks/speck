@@ -42,7 +42,7 @@ export default async function decorate(block) {
   }
 
   if (isArticleCards) {
-    const link = "https://main--usbank--adobedevxsc.hlx.page/articles/articles.json?sheet=featured-stories";
+    const link = block.querySelector('a');
     const cardData = await fetchJson(link);
     cardData.forEach((item) => {
       const picture = createOptimizedPicture(item.image, item.title, false, [{ width: 320 }]);
