@@ -26,6 +26,10 @@
   object-fit: cover;
 }
 
+.sidebar div{
+  margin: initial!important;
+}
+
 .cards.variante1 .cards-card-body{
     margin: -43px 0 0 0;
 }
@@ -47,7 +51,7 @@
 }
 
 .cards.variante1 > ul > li {
-    border: 0px
+    border: 0px;
 }
 
 .section.sidebar{
@@ -56,12 +60,8 @@
     display: flex;
 }
 
-.sidebar div{
-  margin: initial!important;
-}
-
 .cards.variante1 > ul > li {
-    border: 0px
+    border: 0px;
 }
 
 .cards.variante2 > ul > li {
