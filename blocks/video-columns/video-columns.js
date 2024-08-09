@@ -1,8 +1,13 @@
 export default async function decorate(block) {
 
   const rows = [...block.children];
+  var cols;
   if (rows.length == 2){
       block.firstElementChild.classList.add("mainTitle");
+      cols = [...block.childNodes[1].children];
+  }
+  else{
+      cols = [...block.firstElementChild.children]; 
   }
   
   block.classList.add(`columns-${cols.length}-cols`);
