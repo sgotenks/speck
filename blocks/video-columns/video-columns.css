@@ -55,6 +55,7 @@
     font-weight: 700;
     margin: 0;
     line-height: normal;
-    float: left;
-    margin-bottom: 1px;
+    margin-bottom: 23px;
+    display: block;
+    border-bottom: 2px solid #eee;
 }
