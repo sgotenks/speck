@@ -7,13 +7,14 @@ export default async function decorate(block) {
     [...row.children].forEach((col) => {
 
       const link = col.querySelector('a').href;
+      const title = col.querySelector('h2');
       col.textContent = '';
       col.dataset.embedLoaded = false;
 
       const observer = new IntersectionObserver((entries) => {
         if (entries.some((e) => e.isIntersecting)) {
           observer.disconnect();
-          loadVideoEmbed(col, link);
+          loadVideoEmbed(col, link, title);
         }
       });
       observer.observe(col);
@@ -22,7 +23,7 @@ export default async function decorate(block) {
   });
 }
 
-const loadVideoEmbed = (block, link) => {
+const loadVideoEmbed = (block, link, title) => {
   if (block.dataset.embedLoaded === 'true') {
     return;
   }
@@ -33,6 +34,9 @@ const loadVideoEmbed = (block, link) => {
   if (isYoutube) {
     const embedWrapper = embedYoutube(url);
     block.append(embedWrapper);
+    if (title) {
+       block.append(title);
+    }
     embedWrapper.querySelector('iframe').addEventListener('load', () => {
       block.dataset.embedLoaded = true;
     });
