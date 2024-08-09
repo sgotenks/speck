@@ -1,11 +1,11 @@
 export default async function decorate(block) {
 
   const rows = [...block.children];
-  const title = "";
+  const title;
   const cols;
   if (rows == 2){
-      block.firstElementChild.classList.add("main-title");
-      cols = [...block.children[1].children];
+      block.firstElementChild.classList.add("mainTitle");
+      cols = [...block.childNodes[1].children];
   }
   else{
       cols = [...block.firstElementChild.children];
