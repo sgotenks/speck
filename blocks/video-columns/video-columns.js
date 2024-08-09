@@ -1,36 +1,31 @@
 export default async function decorate(block) {
 
   const rows = [...block.children];
-  const title;
-  const cols;
   if (rows == 2){
       block.firstElementChild.classList.add("mainTitle");
-      cols = [...block.childNodes[1].children];
-  }
-  else{
-      cols = [...block.firstElementChild.children];
   }
   
   block.classList.add(`columns-${cols.length}-cols`);
 
   // setup image columns
   [...block.children].forEach((row) => {
-    [...row.children].forEach((col) => {
-
-      const link = col.querySelector('a').href;
-      const title = col.querySelector('h2');
-      col.textContent = '';
-      col.dataset.embedLoaded = false;
-
-      const observer = new IntersectionObserver((entries) => {
-        if (entries.some((e) => e.isIntersecting)) {
-          observer.disconnect();
-          loadVideoEmbed(col, link, title);
-        }
+    if( !(row.classList.contains('mainTitle'))){
+      [...row.children].forEach((col) => {
+        const link = col.querySelector('a').href;
+        const title = col.querySelector('h2');
+        col.textContent = '';
+        col.dataset.embedLoaded = false;
+  
+        const observer = new IntersectionObserver((entries) => {
+          if (entries.some((e) => e.isIntersecting)) {
+            observer.disconnect();
+            loadVideoEmbed(col, link, title);
+          }
+        });
+        observer.observe(col);
+        
       });
-      observer.observe(col);
-      
-    });
+    }
   });
 }
 
