@@ -4,7 +4,7 @@ export default async function decorate(block) {
   var cols;
   if (rows.length == 2){
       block.firstElementChild.classList.add("mainTitle");
-      cols = [...block.childNodes[1].children];
+      cols = [...block.children[1].children];
   }
   else{
       cols = [...block.firstElementChild.children]; 
