@@ -31,3 +31,10 @@
     order: unset;
   }
 }
+
+.video-columns h2{
+    color: #444444;
+    font-size: 16px;
+    line-height: 1.3em;
+    text-align: center;
+}
