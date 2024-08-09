@@ -1,7 +1,7 @@
 export default async function decorate(block) {
 
   const rows = [...block.children];
-  if (rows == 2){
+  if (rows.length == 2){
       block.firstElementChild.classList.add("mainTitle");
   }
   
