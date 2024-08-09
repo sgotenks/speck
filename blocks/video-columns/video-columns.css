@@ -38,3 +38,23 @@
     line-height: 1.3em;
     text-align: center;
 }
+
+.video-columns .mainTitle:after{
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: #f70d28;
+    display: block;
+    position: relative;
+    bottom: -2px;
+}
+
+.video-columns .mainTitle{
+    color: #212121;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    line-height: normal;
+    float: left;
+    margin-bottom: 1px;
+}
