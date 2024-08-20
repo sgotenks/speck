@@ -1,4 +1,4 @@
-.cards > ul {
+.primopiano > ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -7,20 +7,20 @@
   grid-gap: 24px;
 }
 
-.cards > ul > li {
+.primopiano > ul > li {
   border: 1px solid #dadada;
   background-color: var(--background-color);
 }
 
-.cards .cards-card-body {
+.primopiano .cards-card-body {
   margin: 16px;
 }
 
-.cards .cards-card-image {
+.primopiano .cards-card-image {
   line-height: 0;
 }
 
-.cards > ul > li img {
+.primopiano > ul > li img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
@@ -30,11 +30,11 @@
   margin: initial!important;
 }
 
-.cards.variante1 .cards-card-body{
+.primopianovariante1 .cards-card-body{
     margin: -43px 0 0 0!important;
 }
 
-.cards.variante1  .cards-card-body p strong{
+.primopiano.variante1  .cards-card-body p strong{
     display: inline-block;
     font-size: 11px;
     color: #fff;
@@ -45,12 +45,12 @@
 }
 
 
-.cards.variante1  .cards-card-body p {
+.primopiano.variante1  .cards-card-body p {
     color: #212121;
     font-size: 15px;
 }
 
-.cards.variante1 > ul > li {
+.primopiano.variante1 > ul > li {
     border: 0px;
 }
 
@@ -60,20 +60,20 @@
     display: flex;
 }
 
-.cards.variante1 > ul > li {
+.primopiano.variante1 > ul > li {
     border: 0px;
 }
 
-.cards.variante2 > ul > li {
+.primopiano.variante2 > ul > li {
     border: 0px;
     list-style-type: disclosure-closed;
     color: red;
 }
 
-.cards.variante2 .cards-card-body  {
+.primopiano.variante2 .cards-card-body  {
     color: black;
 }
 
-.cards.variante2{
+.primopiano.variante2{
     max-width: 260px;
 }
