@@ -4,7 +4,7 @@ export default function decorate(block) {
   /* change to ul, li */
   const ul = document.createElement('ul');
   const title = document.createElement('div');
-  var titleBlock = "Section";
+  var titleBlock = document.querySelectorAll('.titlecards p')[0];
   title.append(titleBlock);
   title.classList.add("cardsTitle");
   [...block.children].forEach((row) => {
