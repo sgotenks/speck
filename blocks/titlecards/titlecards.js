@@ -1,1 +1,3 @@
-let elements = document.getElementsByClassName("titlecards-wrapper");
+export default async function decorate(block) {
+
+  }
