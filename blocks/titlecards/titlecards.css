@@ -12,3 +12,14 @@
     border-bottom: 2px solid #eee;
     padding-bottom: 5px;
 }
+
+.cardsTitle p:after
+{
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: #f70d28;
+    display: block;
+    position: relative;
+    bottom: -2px;
+}
