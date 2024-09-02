@@ -7,9 +7,9 @@ export default function decorate(block) {
   var titleBlock = document.querySelectorAll('.titlecards p')[0];
   title.append(titleBlock);
   title.classList.add("cardsTitle");
+  var countElement = 1;
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
-    var countElement = 1;
     while (row.firstElementChild) li.append(row.firstElementChild);
     var specialClass = "noclass";
     [...li.children].forEach((div) => {
