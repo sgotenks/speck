@@ -11,7 +11,7 @@ export default function decorate(block) {
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
     while (row.firstElementChild) li.append(row.firstElementChild);
-    var specialClass = "noclass";
+    var specialClass = "";
     [...li.children].forEach((div) => {
       console.log(countElement);
       if (countElement > 2) { specialClass = "smallnews"; }
