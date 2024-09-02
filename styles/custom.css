@@ -94,16 +94,16 @@ footer a:hover {
     padding-right: 66px;
 }
 
-.cards.variante1.top2news .cards-card-body p strong {
+.cards.variante1.top2news .smallclass.cards-card-body p strong {
     display: none;
 }
 
-.top2news .cards-card-image {
+.top2news .smallclass.cards-card-image {
     width: 40%;
     float: left;
 }
 
-.top2news .cards-card-body {
+.top2news .smallclass.cards-card-body {
     width: 50%;
     float: left;
     padding-left: 10px;
