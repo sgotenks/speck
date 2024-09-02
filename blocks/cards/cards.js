@@ -11,9 +11,11 @@ export default function decorate(block) {
     const li = document.createElement('li');
     while (row.firstElementChild) li.append(row.firstElementChild);
     var countElement = 1;
+    var specialClass = "";
     [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-card-image '+'element'+countElement;
-      else div.className = 'cards-card-body '+'element'+countElement;
+      if (countElement > 2) {specialClass = "smallnews"; }
+      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-card-image ' + specialClass;
+      else div.className = 'cards-card-body '+'element' + specialClass;
       countElement++;
     });
     
