@@ -109,3 +109,8 @@ footer a:hover {
     padding-left: 10px;
     margin: 0 !important;
 }
+
+.cards.wa-te > ul > li {
+    background-color: transparent;
+    background-image: linear-gradient(145deg, #25D366 0%, #068335 100%);
+}
