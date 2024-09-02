@@ -107,4 +107,5 @@ footer a:hover {
     width: 50%;
     float: left;
     padding-left: 10px;
+    margin: 0 !important;
 }
