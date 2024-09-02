@@ -13,7 +13,8 @@ export default function decorate(block) {
     var countElement = 1;
     var specialClass = "noclass";
     [...li.children].forEach((div) => {
-      if (countElement > 2) {specialClass = "smallnews"; }
+      console.log(countElement);
+      if (countElement) { specialClass = "smallnews"; }
       if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-card-image ' + specialClass;
       else div.className = 'cards-card-body ' + specialClass;
       countElement++;
