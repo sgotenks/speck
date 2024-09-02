@@ -93,3 +93,17 @@ footer a:hover {
     padding: 0;
     padding-right: 66px;
 }
+
+.cards.variante1.top2news .cards-card-body p strong {
+    display: none;
+}
+
+.top2news .cards-card-image {
+    width: 40%;
+    float: left;
+}
+
+.top2news .cards-card-body {
+    width: 60%;
+    float: left;
+}
