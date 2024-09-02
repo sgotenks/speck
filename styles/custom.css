@@ -104,6 +104,7 @@ footer a:hover {
 }
 
 .top2news .cards-card-body {
-    width: 60%;
+    width: 50%;
     float: left;
+    padding-left: 10px;
 }
