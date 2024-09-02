@@ -89,7 +89,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-.block-news .cards-wrapper {
+.block-news .cards-wrapper:first-child {
     padding: 0;
     padding-right: 66px;
 }
