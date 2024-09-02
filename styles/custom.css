@@ -98,6 +98,10 @@ footer a:hover {
     display: none;
 }
 
+.cards.variante1.top2news .smallnews.cards-card-body p {
+    margin-top: 0;
+}
+
 .top2news .smallnews.cards-card-image {
     width: 40%;
     float: left;
