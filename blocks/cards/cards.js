@@ -9,17 +9,16 @@ export default function decorate(block) {
   title.classList.add("cardsTitle");
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
-    while (row.firstElementChild) li.append(row.firstElementChild);
     var countElement = 1;
+    while (row.firstElementChild) li.append(row.firstElementChild);
     var specialClass = "noclass";
     [...li.children].forEach((div) => {
       console.log(countElement);
-      if (countElement) { specialClass = "smallnews"; }
+      if (countElement > 2) { specialClass = "smallnews"; }
       if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-card-image ' + specialClass;
       else div.className = 'cards-card-body ' + specialClass;
-      countElement++;
     });
-    
+    countElement++;
     ul.append(li);
   });
   ul.querySelectorAll('picture > img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
