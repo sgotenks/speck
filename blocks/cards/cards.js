@@ -15,7 +15,7 @@ export default function decorate(block) {
     [...li.children].forEach((div) => {
       if (countElement > 2) {specialClass = "smallnews"; }
       if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-card-image ' + specialClass;
-      else div.className = 'cards-card-body '+'element' + specialClass;
+      else div.className = 'cards-card-body ' + specialClass;
       countElement++;
     });
     
