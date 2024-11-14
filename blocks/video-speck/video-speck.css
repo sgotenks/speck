@@ -43,3 +43,15 @@ main > .section > div.video-speck-wrapper{
 .video-speck .headline br{
     display: none;
 }
+
+.video-speck .ctA-recipe {
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+}
+
+main .video-speck .ctA-recipe img {
+    width: 326px;
+}
