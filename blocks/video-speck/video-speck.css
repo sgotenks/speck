@@ -10,7 +10,7 @@ main > .section > div.video-speck-wrapper{
 }
 
 .video-speck-wrapper video{
-    width: 100;
+    width: 100%;
 }
 
 .video-speck .headline h1 {
