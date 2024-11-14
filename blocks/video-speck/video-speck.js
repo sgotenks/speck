@@ -1,6 +1,8 @@
 export default async function decorate(block) {
   const link = block.querySelector('a').href;
-  
+  const link = block.querySelector('h2').href;
+  const link = block.querySelector('h3').href;
+  block.textContent = '';
   block.dataset.embedLoaded = false;
 
   const observer = new IntersectionObserver((entries) => {
