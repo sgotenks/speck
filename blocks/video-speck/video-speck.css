@@ -26,13 +26,9 @@
 }
 
 .video-speck .headline span:before {
-    content: url(/CustomerData/496/Images/dotted.png);
+    content: url(/icons/dotted.png);
     -webkit-filter: drop-shadow(2px 1px 2px #222);
     filter: drop-shadow(2px 1px 2px #222);
     display: block;
 }
 
-.video-speck .headline span {
-    font-size: 40px;
-    line-height: 70px;
-}
