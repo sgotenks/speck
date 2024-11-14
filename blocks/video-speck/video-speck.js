@@ -69,7 +69,7 @@ function getGraphicalElement() {
   const tempDiv = document.createElement('div'); 
   tempDiv.innerHTML = `<div class="ctA-recipe">
 		<a href="/en/recipes/">
-			<img alt="Recipes" src="/incons/image.png" data-src="/incons/image.png" style="" width="326" height="251" class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" data-srcset="/incons/image.png 400w, /incons/image.png 600w, /incons/image.png 900w, /incons/image.png 1200w, /incons/image.png 1500w, /incons/image.png 1800w, /incons/image.png 2100w" sizes="326px" srcset="/incons/image.png 400w, /incons/image.png 600w, /incons/image.png 900w, /incons/image.png 1200w, /incons/image.png 1500w, /incons/image.png 1800w, /incons/image.png 2100w"/>
+			<img alt="Recipes" src="/icons/image.png" data-src="/icons/image.png" style="" width="326" height="251" class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" data-srcset="/icons/image.png 400w, /icons/image.png 600w, /icons/image.png 900w, /icons/image.png 1200w, /icons/image.png 1500w, /icons/image.png 1800w, /icons/image.png 2100w" sizes="326px" srcset="/icons/image.png 400w, /icons/image.png 600w, /icons/image.png 900w, /icons/image.png 1200w, /icons/image.png 1500w, /icons/image.png 1800w, /icons/image.png 2100w"/>
 		</a>
 	</div>`;
   return tempDiv.children.item(0);
