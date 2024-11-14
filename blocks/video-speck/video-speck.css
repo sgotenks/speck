@@ -9,6 +9,9 @@ main > .section > div.video-speck-wrapper{
     padding: 0;
 }
 
+.video-speck-wrapper video{
+    width: 100;
+}
 
 .video-speck .headline {
     bottom: 60px;
