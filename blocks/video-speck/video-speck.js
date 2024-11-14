@@ -1,7 +1,7 @@
 export default async function decorate(block) {
   const link = block.querySelector('a').href;
-  const title = block.querySelector('h2').href;
-  const subtitle = block.querySelector('h3').href;
+  const title = block.querySelector('h2');
+  const subtitle = block.querySelector('h3');
   block.textContent = '';
   block.dataset.embedLoaded = false;
 
