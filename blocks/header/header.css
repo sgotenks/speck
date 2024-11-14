@@ -33,7 +33,7 @@ header nav[aria-expanded='true'] {
 @media (width >= 900px) {
   header nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 0 32px;
     max-width: 1264px;
     padding: 0 32px;
@@ -152,7 +152,7 @@ header nav .nav-brand img {
 /* sections */
 header nav .nav-sections {
   grid-area: sections;
-  flex: 1 1 auto;
+  flex: none;
   display: none;
   visibility: hidden;
 }
