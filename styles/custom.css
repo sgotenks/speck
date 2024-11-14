@@ -134,3 +134,9 @@ footer a:hover {
 header nav .nav-sections {
     color: #005332;
 }
+
+@media (width >= 900px) {
+    header nav {
+        justify-content: center;
+    }
+}
