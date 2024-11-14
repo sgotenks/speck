@@ -13,7 +13,7 @@ main > .section > div.video-speck-wrapper{
     width: 100;
 }
 
-.video-speck .headline {
+.video-speck .headline h1 {
     bottom: 60px;
     text-shadow: 4px 3px 7px #3A3838;
     position: absolute;
@@ -21,11 +21,12 @@ main > .section > div.video-speck-wrapper{
     color: #fff;
     text-align: left;
     margin-left: 100px;
+    margin-bottom: 0;
 }
 
-.video-speck .headline span {
+.video-speck .headline span h3{
     font-size: 40px;
-    line-height: 70px;
+    margin-top: 0;
 }
 
 .video-speck .headline span:before {
@@ -35,3 +36,6 @@ main > .section > div.video-speck-wrapper{
     display: block;
 }
 
+.video-speck .headline br{
+    display: none;
+}
