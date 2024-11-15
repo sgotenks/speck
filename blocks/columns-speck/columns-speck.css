@@ -31,3 +31,19 @@
     order: unset;
   }
 }
+
+.columns-speck img {
+    content: "";
+    background: url(/CustomerData/496/Images/icons.png);
+    background-size: 600px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 10;
+    right: 15px;
+    bottom: -23px;
+    -webkit-filter: drop-shadow(2px 1px 2px #656565);
+    filter: drop-shadow(2px 1px 2px #656565);
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+}
