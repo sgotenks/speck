@@ -278,5 +278,11 @@ p{
   line-height: 1.5;
 }
 
-
-
+.white-separator:before{
+    content: "";
+    background-image: url(/icons/separation-dark.png);
+    background-position: left bottom;
+    top: 2px;
+    transform: translateY(-100%);
+    pointer-events: none;
+}
