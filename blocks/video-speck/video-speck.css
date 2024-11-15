@@ -11,6 +11,7 @@ main > .section > div.video-speck-wrapper{
 
 .video-speck-wrapper video{
     width: 100%;
+    height: auto;
 }
 
 .video-speck .headline{
