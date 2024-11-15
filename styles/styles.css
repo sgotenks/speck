@@ -286,3 +286,13 @@ p{
     padding-top: 4%;
     display: block;
 }
+
+.brown-separator:before{
+    content: "";
+    background-image: url(/icons/separation-dark.png);
+    pointer-events: none;
+    background-size: contain;
+    padding-top: 4%;
+    display: block;
+    background: #bfb196;
+}
