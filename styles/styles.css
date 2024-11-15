@@ -293,7 +293,7 @@ p{
 
 .brown-separator:before{
     content: "";
-    background-image: url(/icons/separation-dark.png);
+    background-image: url(/icons/separation-brown.png);
     pointer-events: none;
     background-size: contain;
     padding-top: 4%;
