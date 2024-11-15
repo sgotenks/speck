@@ -56,7 +56,6 @@
 .columns-speck h2{
   margin-top: 50px;
   text-align: left;
-  padding-left: 10px;
   text-transform: none;
 }
 
@@ -64,4 +63,29 @@
   text-align: left;
   margin: 0;
   margin-bottom: 18px;
+}
+
+.columns-speck{
+  margin-top: 20px;
+}
+
+.columns-speck .sc-readMore{
+  width: 390px;
+  text-align: right;
+  position: absolute;
+  /* bottom: -4px; */
+  background-color: #fff;
+  color: #000;
+  padding: 3px 0;
+  text-decoration: none;
+}
+
+.columns-speck .sc-readMore a{
+  background-image: url(/icons/icons.png);
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+  background-size: 600px;
+  text-shadow: 0 0 black;
+  display: block;
+  padding-top: 30px;
 }
