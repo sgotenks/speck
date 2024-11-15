@@ -32,7 +32,11 @@
   }
 }
 
-.columns-speck picture:after {
+.columns-speck img:after {
+  position: relative;
+}
+
+.columns-speck img:after {
     content: "";
     background: url(/icons/icons.png);
     background-size: 600px;
@@ -46,4 +50,5 @@
     filter: drop-shadow(2px 1px 2px #656565);
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
+    background-position: -296px -352px;
 }
