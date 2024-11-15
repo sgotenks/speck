@@ -13,6 +13,11 @@ export default function decorate(block) {
           picWrapper.classList.add('columns-img-col');
         }
       }
+      const temp = document.createElement('div');
+      temp.innerHTML = `<div class="sc-readMore">
+        <a href="#"><span>to the recipe</span></a></div>`;
+      block.append(temp.children.item(0));
+      
     });
   });
 }
