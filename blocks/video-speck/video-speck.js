@@ -40,6 +40,8 @@ function getVideoElement(source) {
   video.setAttribute('loop', '');
   video.setAttribute('playsinline', '');
   video.removeAttribute('controls');
+  video.setAttribute('width', '1280');
+  video.setAttribute('height', '720');
   video.addEventListener('canplay', () => {
     video.muted = true;
     video.play();
