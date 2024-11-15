@@ -52,3 +52,16 @@
     transform: perspective(1px) translateZ(0);
     background-position: -296px -352px;
 }
+
+.columns-speck h2{
+  margin-top: 50px;
+  text-align: left;
+  padding-left: 10px;
+  text-transform: none;
+}
+
+.columns-speck p{
+  text-align: center;
+  font-size: 19px;
+  line-height: 1.5;
+}
