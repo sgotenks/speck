@@ -89,3 +89,18 @@
   display: block;
   padding-top: 30px;
 }
+
+.columns-speck .sc-readMore span:before{
+  content: " ";
+  border-left: 16px solid #fff;
+}
+
+.columns-speck .sc-readMore span:after{
+  content: " ";
+  background: url(/icons/icons.png);
+  background-size: 600px;
+  width: 13px;
+  height: 10px;
+  display: inline-block;
+  background-position: 3px -1091px;
+}
