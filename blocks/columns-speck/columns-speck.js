@@ -12,11 +12,11 @@ export default function decorate(block) {
           // picture is only content in column
           picWrapper.classList.add('columns-img-col');
         }
-      }      
+      }
+      const temp = document.createElement('div');
+      temp.innerHTML = `<div class="sc-readMore">
+      <a href="#"><span>to the recipe</span></a></div>`;
+      col.append(temp.children.item(0));
     });
-    const temp = document.createElement('div');
-    temp.innerHTML = `<div class="sc-readMore">
-    <a href="#"><span>to the recipe</span></a></div>`;
-    block.append(temp.children.item(0));
   });
 }
