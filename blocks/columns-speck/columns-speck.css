@@ -66,13 +66,13 @@
 }
 
 .columns-speck{
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .columns-speck .sc-readMore{
   width: 390px;
   text-align: right;
-  position: absolute;
+  position: relative;
   /* bottom: -4px; */
   background-color: #fff;
   color: #000;
