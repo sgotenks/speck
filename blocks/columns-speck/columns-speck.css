@@ -104,3 +104,8 @@
   display: inline-block;
   background-position: 3px -1091px;
 }
+
+.columns-speck .sc-readMore span{
+  color: black;
+  font-weight: bold;
+}
