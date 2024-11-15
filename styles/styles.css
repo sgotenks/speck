@@ -287,6 +287,10 @@ p{
     display: block;
 }
 
+.brown-separator{
+    background: #bfb196;
+}
+
 .brown-separator:before{
     content: "";
     background-image: url(/icons/separation-dark.png);
