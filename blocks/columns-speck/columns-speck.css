@@ -32,11 +32,11 @@
   }
 }
 
-.columns-speck picture:after {
+.columns-speck picture {
   position: relative;
 }
 
-.columns-speck img:after {
+.columns-speck picture:after {
     content: "";
     background: url(/icons/icons.png);
     background-size: 600px;
