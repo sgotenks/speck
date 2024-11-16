@@ -110,5 +110,10 @@ main .video-speck .ctA-recipe img {
         right: 20px;
         width: 200px;
     }
+
+    .video-speck-wrapper video{
+        display: none
+    }
+
 }
 
