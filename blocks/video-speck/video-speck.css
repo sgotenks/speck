@@ -97,3 +97,19 @@ main .video-speck .ctA-recipe img {
     }
 }
 
+@media (max-width: 994px) {
+    main .video-speck .ctA-recipe img {
+        display: block !important;
+        width: 163px !important;
+    }
+}
+
+@media (max-width: 640px) {
+    main .video-speck .ctA-recipe {
+        position: absolute;
+        bottom: -30px;
+        right: 20px;
+        width: 200px;
+    }
+}
+
