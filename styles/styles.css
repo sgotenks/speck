@@ -279,16 +279,17 @@ p{
 }
 
 .white-separator:before{
-    content: "";
-    background-image: url(/icons/separation-dark.png);
-    pointer-events: none;
-    background-size: contain;
-    padding-top: 4%;
-    display: block;
+  content: "";
+  background-image: url(/icons/separation-dark.png);
+  pointer-events: none;
+  background-size: contain;
+  padding-top: 4%;
+  display: block;
 }
 
 .brown-separator{
-    background-color: #bfb196;
+  background-color: #bfb196;
+  padding-bottom: 40px;
 }
 
 .brown-separator:before{
