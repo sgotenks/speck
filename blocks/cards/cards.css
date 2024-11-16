@@ -77,3 +77,9 @@
 .cards.variante2{
     max-width: 260px;
 }
+
+
+.cards.speck{
+  padding: 20px;
+  background-color: white;
+}
