@@ -84,3 +84,16 @@ main .video-speck .ctA-recipe img {
         width: 250px !important;
     }
 }
+
+@media (max-width: 994px) {
+    .video-speck .headline {
+        display: none !important;
+    }
+
+    main .video-speck .ctA-recipe {
+        z-index: 2;
+        width: 163px;
+        bottom: 15vh;
+    }
+}
+
