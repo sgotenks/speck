@@ -107,7 +107,7 @@ main .video-speck .ctA-recipe img {
 @media (max-width: 640px) {
     main .video-speck .ctA-recipe {
         position: absolute;
-        bottom: -30px;
+        bottom: 400px;
         right: 20px;
         width: 200px;
     }
