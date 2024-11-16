@@ -42,6 +42,22 @@ main > .section > div.video-speck-wrapper{
     display: block;
 }
 
+@media (max-width: 1420px) {
+    .video-speck .headline h2 {
+        font-size: 42px;
+    }
+    
+    .video-speck .headline span h3 {
+        font-size: 32px;
+    }
+
+    .video-speck .headline span:before {
+        width: 545px;
+        overflow: hidden;
+    }
+}
+
+
 .video-speck .headline br{
     display: none;
 }
@@ -56,4 +72,15 @@ main > .section > div.video-speck-wrapper{
 
 main .video-speck .ctA-recipe img {
     width: 326px;
+}
+
+@media (max-width: 1300px) {
+   .video-speck .ctA-recipe {
+        bottom: 30px;
+        right: 30px;
+    }
+
+    main .video-speck .ctA-recipe img {
+        width: 250px !important;
+    }
 }
