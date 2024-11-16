@@ -3,7 +3,6 @@
 }
 
 main > .section > div.video-speck-wrapper{
-    width: 100vw;
     max-width: 100vw;
     margin-left: calc(50% - 50vw);
     padding: 0;
