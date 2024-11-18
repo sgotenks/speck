@@ -2,10 +2,11 @@ export default async function decorate(block) {
   
   [...block.children].forEach((row) => {
 	  const picture = row.querySelector('picture');
-	  const link = row.querySelector('a').href;
+	  const linkNode = row.querySelector('a');
 	  const title = row.querySelector('h2');
 	  const subtitle = row.querySelector('h3');
-	  if(link){
+	  if(linkNode){
+		const link = row.querySelector('a').href;
 		  row.textContent = '';
 		  row.dataset.embedLoaded = false;
 		
