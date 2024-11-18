@@ -1,4 +1,5 @@
 export default async function decorate(block) {
+  const picture = block.querySelector('picture').href;
   const link = block.querySelector('a').href;
   const title = block.querySelector('h2');
   const subtitle = block.querySelector('h3');
@@ -8,14 +9,14 @@ export default async function decorate(block) {
   const observer = new IntersectionObserver((entries) => {
     if (entries.some((e) => e.isIntersecting)) {
       observer.disconnect();
-      loadVideoEmbed(block, link, title, subtitle);
+      loadVideoEmbed(block, link, title, subtitle, picture);
     }
   });
   observer.observe(block);
 }
 
 
-const loadVideoEmbed = (block, link, title, subtitle) => {
+const loadVideoEmbed = (block, link, title, subtitle, picture) => {
   if (block.dataset.embedLoaded === 'true') {
     return;
   }
@@ -28,6 +29,7 @@ const loadVideoEmbed = (block, link, title, subtitle) => {
   block.append(videoEl);
   block.append(textEl);
   block.append(graphicalEl);
+  block.append(picture);
   videoEl.addEventListener('canplay', () => {
     block.dataset.embedLoaded = true;
   });
