@@ -1,5 +1,5 @@
 export default async function decorate(block) {
-  const picture = block.querySelector('picture').href;
+  const picture = block.querySelector('picture');
   const link = block.querySelector('a').href;
   const title = block.querySelector('h2');
   const subtitle = block.querySelector('h3');
