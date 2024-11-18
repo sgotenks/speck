@@ -1,7 +1,4 @@
 export default async function decorate(block) {
-
-
-  const cols = [...block.firstElementChild.children];
   
   [...block.children].forEach((row) => {
 	  const picture = row.querySelector('picture');
@@ -21,7 +18,7 @@ export default async function decorate(block) {
 		  observer.observe(row);
 	  }
 	  else{}
-  }
+  })
 }
 
 
