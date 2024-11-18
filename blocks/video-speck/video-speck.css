@@ -117,3 +117,10 @@ main .video-speck .ctA-recipe img {
 
 }
 
+@media (min-width: 640px) {
+  .video-speck-wrapper picture{
+        display: none
+    }
+
+}
+
