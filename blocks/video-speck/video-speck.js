@@ -1,22 +1,31 @@
 export default async function decorate(block) {
-  const picture = block.querySelector('picture');
-  const link = block.querySelector('a').href;
-  const title = block.querySelector('h2');
-  const subtitle = block.querySelector('h3');
-  block.textContent = '';
-  block.dataset.embedLoaded = false;
 
-  const observer = new IntersectionObserver((entries) => {
-    if (entries.some((e) => e.isIntersecting)) {
-      observer.disconnect();
-      loadVideoEmbed(block, link, title, subtitle, picture);
-    }
-  });
-  observer.observe(block);
+
+  const cols = [...block.firstElementChild.children];
+  
+  [...block.children].forEach((row) => {
+	  const picture = row.querySelector('picture');
+	  const link = row.querySelector('a').href;
+	  const title = row.querySelector('h2');
+	  const subtitle = row.querySelector('h3');
+	  if(link){
+		  row.textContent = '';
+		  row.dataset.embedLoaded = false;
+		
+		  const observer = new IntersectionObserver((entries) => {
+		    if (entries.some((e) => e.isIntersecting)) {
+		      observer.disconnect();
+		      loadVideoEmbed(row, link, title, subtitle);
+		    }
+		  });
+		  observer.observe(row);
+	  }
+	  else{}
+  }
 }
 
 
-const loadVideoEmbed = (block, link, title, subtitle, picture) => {
+const loadVideoEmbed = (block, link, title, subtitle) => {
   if (block.dataset.embedLoaded === 'true') {
     return;
   }
@@ -29,7 +38,6 @@ const loadVideoEmbed = (block, link, title, subtitle, picture) => {
   block.append(videoEl);
   block.append(textEl);
   block.append(graphicalEl);
-  block.append(picture);
   videoEl.addEventListener('canplay', () => {
     block.dataset.embedLoaded = true;
   });
