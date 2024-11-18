@@ -19,7 +19,8 @@ import {
  * @param {Element} main The container element
  */
 function buildHeroBlock(main) {
-  /**
+  const tmpl = document.head.querySelector('meta[name="template"]').content;
+  if(tmpl && tmpl != "main"){
   const h1 = main.querySelector('h1');
   const picture = main.querySelector('picture');
   // eslint-disable-next-line no-bitwise
@@ -28,7 +29,7 @@ function buildHeroBlock(main) {
     section.append(buildBlock('hero', { elems: [picture, h1] }));
     main.prepend(section);
   }
-  */
+  }
 }
 
 /**
